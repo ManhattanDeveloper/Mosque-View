@@ -1,0 +1,59 @@
+<html>
+  <head>
+    <title>Mosque View</title>
+    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.3.10/angular.min.js"></script>
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+
+    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <script src="app.js"></script>
+  </head>
+  <body ng-app="MosqueView" ng-controller="MainCtrl">
+    <div class="container">
+      <h2 class = "center">Athan Times</h2>
+      <table class="table">
+        <thead>
+          <tr>
+            <th>Prayer</th>
+            <th>Athan Time</th>
+            <th>Prayer Time</th>
+          </tr>
+        </thead>
+        <tbody ng-module = "timings, mosqueTime">
+          <tr>
+            <td>Fajr</td>
+            <td>{{timings.Fajr}}</td>
+            <td>{{mosqueTime.Fajr}}</td>
+          </tr>
+          <tr>
+            <td>Dhuhr</td>
+            <td>{{timings.Dhuhr}}</td>
+            <td>{{mosqueTime.Dhuhr}}</td>
+          </tr>
+          <tr>
+            <td>Asr</td>
+            <td>{{timings.Asr}}</td>
+            <td>{{mosqueTime.Asr}}</td>
+          </tr>
+          <tr>
+            <td>Maghrib</td>
+            <td>{{timings.Maghrib}}</td>
+            <td>{{mosqueTime.Maghrib}}</td>
+          </tr>
+          <tr>
+            <td>Isha</td>
+            <td>{{timings.Isha}}</td>
+            <td>{{mosqueTime.Isha}}</td>
+          </tr>
+          <tr>
+            <td>Jummah</td>
+            <td>{{timings.Asr}}</td>
+            <td>{{mosqueTime.Jummah}}</td>
+          </tr>
+        </tbody>
+      </table>
+      <p class = "center">To view this times on the go, visit www.MosqueView.com/AlFajr</p>
+    </div>
+  </body>
+</html>
