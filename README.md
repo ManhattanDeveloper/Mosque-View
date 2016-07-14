@@ -10,4 +10,4 @@ Start Server
 
 Start Client
 
-open `Client/index.html`
+`open Client/index.html`
